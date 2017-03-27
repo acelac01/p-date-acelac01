@@ -1,3 +1,5 @@
+package es.unileon.prg1.date;
+
 class MainDate
 {
 	public static void main(String args[])
