@@ -12,7 +12,7 @@ public class Date
 
 		this.day = 1;
 		this.month = 1;
-		this.year = 2016;
+		this.year = 2017;
 	}	
 
 
@@ -155,18 +155,18 @@ public class Date
 	}
 
 
-	public boolean isSameDay(Date other){
+	public boolean isSameDay(Date another){
 		
-		if (this.day == other.getDay()){
+		if (this.day == another.getDay()){
 			return true;
 		}else{
 			return false;
 		}
 	}
 	
-	public boolean isSameMonth(Date other){
+	public boolean isSameMonth(Date another){
 		
-		if (this.month == other.getMonth()) {
+		if (this.month == another.getMonth()) {
 
 			return true;
 		}else{
@@ -175,53 +175,53 @@ public class Date
 		}
 	}
 
-	public boolean isSameYear(Date other){
+	public boolean isSameYear(Date another){
 		
-		return this.year == other.getYear();
+		return this.year == another.getYear();
 	}
 
 	
-	boolean isSame(){
+	boolean isSame(Date another){
 
-			return this.isSameDay(other) && this.isSameMonth(other) && this.isSameYear(other);
+			return this.isSameDay(another) && this.isSameMonth(another) && this.isSameYear(another);
 	}
 
 
 
-	public String nameOfMonth(int month)
+	public String getMonthName(int month)
 	{
 
-		String nameMonth = null;
+		String getMonthName = null;
 
 		switch(this.month)
 		{
-			case 1: nameMonth = "January";
+			case 1: getMonthName = "January";
 				break;
-			case 2: nameMonth = "February";
+			case 2: getMonthName = "February";
 				break;
-			case 3: nameMonth = "March";
+			case 3: getMonthName = "March";
 				break;
-			case 4: nameMonth = "April";
+			case 4: getMonthName = "April";
 				break;
-			case 5: nameMonth = "May";
+			case 5: getMonthName = "May";
 				break;
-			case 6: nameMonth = "June";
+			case 6: getMonthName = "June";
 				break;
-			case 7: nameMonth = "July";
+			case 7: getMonthName = "July";
 				break;
-			case 8: nameMonth = "August";
+			case 8: getMonthName = "August";
 				break;
-			case 9: nameMonth = "September";
+			case 9: getMonthName = "September";
 				break;
-			case 10: nameMonth = "October";
+			case 10: getMonthName = "October";
 				break;
-			case 11: nameMonth = "November";
+			case 11: getMonthName = "November";
 				break;
-			case 12: nameMonth = "December";
+			case 12: getMonthName = "December";
 				break;
 		}
 
-		return name;
+		return getMonthName;
 
 	}
 
@@ -264,7 +264,7 @@ public class Date
 		return numDays;
 	}
 
-	public String getSeason(){
+	public String getSeasonName(){
 
 		String season = null;
 
@@ -390,7 +390,7 @@ public class Date
 	}
 
 
-	public int numRandomTriesEqualDate(){
+	public int numRandomTriesEqualsDate(){
         int tries, d, m, y;
         tries = 0;
         
